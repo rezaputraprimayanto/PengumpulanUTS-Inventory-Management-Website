@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.card {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+
+.card form {
+  margin-top: 30px;
+}
+
+.card .input-group {
+  margin-bottom: 20px; /* Tambahkan jarak antara setiap input */
+}
+
+.card input[type="email"],
+.card input[type="password"],
+.card input[type="text"] {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #c7bebe;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.card input[type="email"]:focus,
+.card input[type="password"]:focus,
+.card input[type="text"]:focus,
+.card input[type="email"]:valid,
+.card input[type="password"]:valid,
+.card input[type="text"]:valid {
+  border-color: #4070f4;
+}
+
+.card .input-group.button input[type="submit"] {
+  margin-top: 20px; /* Tambahkan jarak antara tombol dan input di bawahnya */
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+
+.card .input-group.button input[type="submit"]:hover {
+  background: #0e4bf1;
+}
+
+.card .text h3 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+.card .text h3 a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+.card .text h3 a:hover {
+  text-decoration: underline;
+}
